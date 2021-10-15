@@ -1,5 +1,6 @@
 import java.util.*;
 
+// 우선순위 큐를 사용하여 자동정렬(오름차순) 후 poll()
 class Solution {
     public int solution(int[] scoville, int K) {
         int answer = 0;
