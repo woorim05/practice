@@ -1,10 +1,5 @@
 class Solution {
     int[][] dial = {{3,1},{0,0},{0,1},{0,2},{1,0},{1,1},{1,2},{2,0},{2,1},{2,2},{3,0},{3,1},{3,2}};
-    public int distance(int numbers, int position) {
-        int x = Math.abs((dial[position][0]) - (dial[numbers][0]));
-        int y = Math.abs((dial[position][1]) - (dial[numbers][1]));
-        return (x + y); 
-    }
     
     public String solution(int[] numbers, String hand) {
         String answer = "";
@@ -21,8 +16,8 @@ class Solution {
                 rHand = numbers[i];
             
             } else {
-                int lLength = distance(numbers[i], lHand);
-                int rLength = distance(numbers[i], rHand);
+                int lLength = distance(numbers[i], lHand); // 왼손 거리
+                int rLength = distance(numbers[i], rHand); // 오른손 거리
                 
                 if (lLength < rLength) {
                     answer += "L";
@@ -45,5 +40,11 @@ class Solution {
         }
         
         return answer;
+    }
+    
+    public int distance(int numbers, int position) {
+        int x = Math.abs((dial[position][0]) - (dial[numbers][0]));
+        int y = Math.abs((dial[position][1]) - (dial[numbers][1]));
+        return (x + y); 
     }
 }
