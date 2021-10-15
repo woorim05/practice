@@ -12,7 +12,7 @@ class Solution {
         for (Entry<String, Integer> entry : hm.entrySet()) 
             answer *= entry.getValue() + 1;
 
-        answer--;
+        answer--; // 모두 사용하지 않을 경우 제거
 
         return answer;
     }
