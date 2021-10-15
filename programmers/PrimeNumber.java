@@ -20,8 +20,9 @@ class Solution {
 
     public boolean primeNum(int num) {
         boolean prime = true;
-
-        for (int i = 2; i < num; i++) {
+        
+        // 1과 자기 자신을 제외한 수로 나누었을 때 나머지가 0이면 소수가 아니라는 의미
+        for (int i = 2; i < num; i++) { 
             if (num%i == 0) {
                 prime = false;
                 break;
