@@ -1,6 +1,6 @@
 import java.util.*;
 
-// 배열 활용
+// 배열 활용 
 class Solution {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
