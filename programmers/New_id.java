@@ -3,7 +3,7 @@ class Solution {
         String answer = "";
         // 1
         answer = new_id.toLowerCase();
-        // 2
+        // 2 
         answer = answer.replaceAll("[^\\w-_.]", "");
         // 3
         answer = answer.replaceAll("\\.{2,}", ".");
