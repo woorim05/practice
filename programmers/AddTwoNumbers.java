@@ -30,7 +30,6 @@ class Solution {
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i+1; j < numbers.length; j++) {
                 int sum = numbers[i] + numbers[j];
-                if (set.size() != 0 && set.contains(sum)) continue;
                 set.add(sum);
             }
         }
