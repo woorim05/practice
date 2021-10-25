@@ -10,6 +10,7 @@ import java.util.*;
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n - lost.length;
+        // 둘 다 정렬 필요
         Arrays.sort(lost);
         Arrays.sort(reserve);
         
